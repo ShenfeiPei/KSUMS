@@ -1,6 +1,6 @@
 import numpy as np
-import funs as Ifuns
-from KSUMS import KSUMS
+from KSUMS_pack.KSUMS import KSUMS
+from KSUMS_pack.Public import Ifuns, Gfuns, Mfuns
 
 knn = 20
 
@@ -8,25 +8,15 @@ knn = 20
 X, y_true, N, dim, c_true = Ifuns.load_mat("/home/pei/DATA/Mpeg7_20200916.mat")
 print(N, dim, c_true)
 
-D = Ifuns.EuDist2(X, X, squared=True)
-np.fill_diagonal(D, -1)
-ind_M = np.argsort(D, axis=1)
-np.fill_diagonal(D, 0)
+NN, NND = Gfuns.knn_f(X, knn)
 
-NN = ind_M[:, :knn]
-NND = Ifuns.matrix_index_take(D, NN)
-
-# Clustering
 obj = KSUMS(NN.astype(np.int32), NND, c_true)
 obj.clu()
 y_pred = obj.y_pre
 
 
-# eval
-acc = Ifuns.accuracy(y_true=y_true, y_pred=y_pred)
-ari = Ifuns.ari(y_true=y_true, y_pred=y_pred)
-
-print(obj.time)
+acc = Mfuns.accuracy(y_true=y_true, y_pred=y_pred)
 print(acc)
-print(ari)
 
+paper: Mpeg7, acc = 0.554
+run:   Mpeg7, acc = 0.555

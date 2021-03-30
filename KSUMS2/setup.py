@@ -4,7 +4,7 @@ import os
 def configuration(parent_package='', top_path=None):
     from numpy.distutils.misc_util import Configuration
 
-    config = Configuration('KSUMS_pack', parent_package, top_path)
+    config = Configuration('KSUMS2', parent_package, top_path)
     config.add_subpackage('KSUMS')
     config.add_subpackage('Public')
 

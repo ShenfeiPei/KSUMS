@@ -1,0 +1,98 @@
+In file included from KSUMS2/KSUMS/KSUMS_.cpp:659:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:15: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   15 |         #pragma omp parallel for
+      | 
+./KSUMS2/Public/CppFuns/CppFuns.cpp:35: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   35 |         #pragma omp parallel for
+      | 
+In file included from KSUMS2/KSUMS/KSUMS_.cpp:659:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:53: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   53 |         #pragma omp parallel for
+      | 
+./KSUMS2/Public/CppFuns/CppFuns.cpp:67: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   67 |         #pragma omp parallel for
+      | 
+./KSUMS2/Public/CppFuns/CppFuns.cpp:81: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   81 |         #pragma omp parallel for
+      | 
+./KSUMS2/Public/CppFuns/CppFuns.cpp:96: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+   96 |         #pragma omp parallel for
+      | 
+./KSUMS2/Public/CppFuns/CppFuns.cpp:104: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+  104 |         #pragma omp parallel for
+      | 
+./KSUMS2/Public/CppFuns/CppFuns.cpp:112: warning: ignoring ‘#pragma omp parallel’ [-Wunknown-pragmas]
+  112 |         #pragma omp parallel for
+      | 
+In file included from /home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include/numpy/ndarraytypes.h:1822,
+                 from /home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include/numpy/ndarrayobject.h:12,
+                 from /home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h:4,
+                 from KSUMS2/KSUMS/KSUMS_.cpp:666:
+/home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:17:2: warning: #warning "Using deprecated NumPy API, disable it with " "#define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-Wcpp]
+   17 | #warning "Using deprecated NumPy API, disable it with " \
+      |  ^~~~~~~
+In file included from KSUMS2/KSUMS/KSUMS_.cpp:659:
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In function ‘void cf::EuDist2_byCol(std::vector<std::vector<double> >&, std::vector<std::vector<double> >&, std::vector<std::vector<double> >&)’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:41:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   41 |             for (int l = 0; l < B.size(); l++){
+      |                             ~~^~~~~~~~~~
+In file included from KSUMS2/KSUMS/KSUMS_.cpp:659:
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In function ‘void cf::EuDist2_byCol(std::vector<std::vector<double> >&, std::vector<double>&, std::vector<std::vector<double> >&, std::vector<double>&, std::vector<std::vector<double> >&)’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:87:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   87 |             for (int l = 0; l < B.size(); l++){
+      |                             ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In function ‘void cf::square_sum_by_row(std::vector<std::vector<double> >&, std::vector<double>&)’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:97:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   97 |         for (int i = 0; i < X.size(); i++){
+      |                         ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In function ‘void cf::square_sum_by_row(std::valarray<std::valarray<double> >&, std::valarray<double>&)’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:105:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+  105 |         for (int i = 0; i < X.size(); i++){
+      |                         ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In function ‘void cf::square_sum_by_col(std::vector<std::vector<double> >&, std::vector<double>&)’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:113:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  113 |         for (int j = 0; j < X[0].size(); j++){
+      |                         ~~^~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp:115:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  115 |             for (int i = 0; i < X.size(); i++){
+      |                             ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In instantiation of ‘double cf::median_vec2d(std::vector<std::vector<T> >&) [with T = int]’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:147:61:   required from here
+./KSUMS2/Public/CppFuns/CppFuns.cpp:136:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  136 |         for (int i = 0; i < v.size(); i++){
+      |                         ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp:137:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  137 |             for (int j = 0; j < v[i].size(); j++){
+      |                             ~~^~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In instantiation of ‘double cf::median_vec2d(std::vector<std::vector<T> >&) [with T = double]’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:148:67:   required from here
+./KSUMS2/Public/CppFuns/CppFuns.cpp:136:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<double> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  136 |         for (int i = 0; i < v.size(); i++){
+      |                         ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp:137:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  137 |             for (int j = 0; j < v[i].size(); j++){
+      |                             ~~^~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In instantiation of ‘void cf::symmetry(std::vector<std::vector<int> >&, std::vector<std::vector<T> >&, int, T) [with T = int]’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:235:110:   required from here
+./KSUMS2/Public/CppFuns/CppFuns.cpp:205:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  205 |                 for (int k = 0; k < RNN[i].size(); k++){
+      |                                 ~~^~~~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp:225:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  225 |                 for (int j = 0; j < NN[i].size(); j++){
+      |                                 ~~^~~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In instantiation of ‘void cf::symmetry(std::vector<std::vector<int> >&, std::vector<std::vector<T> >&, int, T) [with T = double]’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:236:119:   required from here
+./KSUMS2/Public/CppFuns/CppFuns.cpp:205:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  205 |                 for (int k = 0; k < RNN[i].size(); k++){
+      |                                 ~~^~~~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp:225:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  225 |                 for (int j = 0; j < NN[i].size(); j++){
+      |                                 ~~^~~~~~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In instantiation of ‘void cf::argsort_f(std::vector<T>&, std::vector<int>&) [with T = int]’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:279:66:   required from here
+./KSUMS2/Public/CppFuns/CppFuns.cpp:276:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+  276 |         for (int i = 0; i < v.size(); i++) ind[i] = i;
+      |                         ~~^~~~~~~~~~
+./KSUMS2/Public/CppFuns/CppFuns.cpp: In instantiation of ‘void cf::argsort_f(std::vector<T>&, std::vector<int>&) [with T = double]’:
+./KSUMS2/Public/CppFuns/CppFuns.cpp:280:72:   required from here
+./KSUMS2/Public/CppFuns/CppFuns.cpp:276:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]

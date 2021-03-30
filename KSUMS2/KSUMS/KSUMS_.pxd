@@ -1,6 +1,7 @@
 from libcpp.vector cimport vector
 
-from KSUMS_pack.Public.CppFuns.Keep_order_ cimport Keep_order
+from KSUMS2.Public.CppFuns.Keep_order_ cimport Keep_order
+#  from KSUMS_pack.Public.CppFuns.Keep_order_ cimport Keep_order
 
 cdef extern from "CppFuns.cpp":
     pass

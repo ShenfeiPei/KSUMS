@@ -1,7 +1,9 @@
 import os
 import numpy
 from Cython.Build import cythonize
-from KSUMS_pack.Public import cg
+#  from KSUMS_pack.Public import cg
+top_pack = __import__(__name__.split("_")[0], fromlist=["Public"])
+cg = top_pack.Public.cg
 
 
 def configuration(parent_package='', top_path=None):

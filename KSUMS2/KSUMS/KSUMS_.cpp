@@ -6,29 +6,29 @@
         "depends": [
             "/home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include/numpy/arrayobject.h",
             "/home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include/numpy/ufuncobject.h",
-            "KSUMS_pack/KSUMS/KSUMS.cpp",
-            "KSUMS_pack/KSUMS/KSUMS.h",
-            "KSUMS_pack/Public/CppFuns/CppFuns.cpp",
-            "KSUMS_pack/Public/CppFuns/Keep_order.cpp",
-            "KSUMS_pack/Public/CppFuns/Keep_order.h"
+            "KSUMS2/KSUMS/KSUMS.cpp",
+            "KSUMS2/KSUMS/KSUMS.h",
+            "KSUMS2/Public/CppFuns/CppFuns.cpp",
+            "KSUMS2/Public/CppFuns/Keep_order.cpp",
+            "KSUMS2/Public/CppFuns/Keep_order.h"
         ],
         "include_dirs": [
-            "KSUMS_pack/KSUMS",
-            "./KSUMS_pack/Public/CppFuns",
-            "./KSUMS_pack/KSUMS",
+            "KSUMS2/KSUMS",
+            "./KSUMS2/Public/CppFuns",
+            "./KSUMS2/KSUMS",
             "/home/pei/app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/core/include",
-            "/home/pei/KSUMS/KSUMS_code/KSUMS_pack/Public/CppFuns"
+            "/home/pei/KSUMS/KSUMS_code/KSUMS2/Public/CppFuns"
         ],
         "language": "c++",
         "libraries": [
             "m"
         ],
-        "name": "KSUMS_pack.KSUMS.KSUMS_",
+        "name": "KSUMS2.KSUMS.KSUMS_",
         "sources": [
-            "KSUMS_pack/KSUMS/KSUMS_.pyx"
+            "KSUMS2/KSUMS/KSUMS_.pyx"
         ]
     },
-    "module_name": "KSUMS_pack.KSUMS.KSUMS_"
+    "module_name": "KSUMS2.KSUMS.KSUMS_"
 }
 END: Cython Metadata */
 
@@ -648,8 +648,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__KSUMS_pack__KSUMS__KSUMS_
-#define __PYX_HAVE_API__KSUMS_pack__KSUMS__KSUMS_
+#define __PYX_HAVE__KSUMS2__KSUMS__KSUMS_
+#define __PYX_HAVE_API__KSUMS2__KSUMS__KSUMS_
 /* Early includes */
 #include "ios"
 #include "new"
@@ -899,7 +899,7 @@ static const char *__pyx_filename;
 
 static const char *__pyx_f[] = {
   "stringsource",
-  "KSUMS_pack/KSUMS/KSUMS_.pyx",
+  "KSUMS2/KSUMS/KSUMS_.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -1154,7 +1154,7 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 
 
 /*--- Type declarations ---*/
-struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS;
+struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS;
 
 /* "../../app/anaconda3/envs/py38/lib/python3.8/site-packages/numpy/__init__.pxd":736
  * ctypedef npy_longdouble longdouble_t
@@ -1192,14 +1192,14 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "KSUMS_pack/KSUMS/KSUMS_.pyx":9
+/* "KSUMS2/KSUMS/KSUMS_.pyx":9
  * from .KSUMS_ cimport KSUMS
  * 
  * cdef class PyKSUMS:             # <<<<<<<<<<<<<<
  *     cdef KSUMS c_KSUMS
  * 
  */
-struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS {
+struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS {
   PyObject_HEAD
   KSUMS c_KSUMS;
 };
@@ -1766,7 +1766,7 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 /* Module declarations from 'libcpp.vector' */
 
-/* Module declarations from 'KSUMS_pack.Public.CppFuns.Keep_order_' */
+/* Module declarations from 'KSUMS2.Public.CppFuns.Keep_order_' */
 
 /* Module declarations from 'cpython.buffer' */
 
@@ -1798,8 +1798,8 @@ static PyTypeObject *__pyx_ptype_5numpy_ufunc = 0;
 static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *, char *, char *, int *); /*proto*/
 static CYTHON_INLINE int __pyx_f_5numpy_import_array(void); /*proto*/
 
-/* Module declarations from 'KSUMS_pack.KSUMS.KSUMS_' */
-static PyTypeObject *__pyx_ptype_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS = 0;
+/* Module declarations from 'KSUMS2.KSUMS.KSUMS_' */
+static PyTypeObject *__pyx_ptype_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS = 0;
 static std::vector<int>  __pyx_convert_vector_from_py_int(PyObject *); /*proto*/
 static std::vector<std::vector<int> >  __pyx_convert_vector_from_py_std_3a__3a_vector_3c_int_3e___(PyObject *); /*proto*/
 static std::vector<double>  __pyx_convert_vector_from_py_double(PyObject *); /*proto*/
@@ -1807,11 +1807,11 @@ static std::vector<std::vector<double> >  __pyx_convert_vector_from_py_std_3a__3
 static PyObject *__pyx_convert_vector_to_py_int(const std::vector<int>  &); /*proto*/
 static __Pyx_TypeInfo __Pyx_TypeInfo_int = { "int", NULL, sizeof(int), { 0 }, 0, IS_UNSIGNED(int) ? 'U' : 'I', IS_UNSIGNED(int), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_double = { "double", NULL, sizeof(double), { 0 }, 0, 'R', 0, 0 };
-#define __Pyx_MODULE_NAME "KSUMS_pack.KSUMS.KSUMS_"
-extern int __pyx_module_is_main_KSUMS_pack__KSUMS__KSUMS_;
-int __pyx_module_is_main_KSUMS_pack__KSUMS__KSUMS_ = 0;
+#define __Pyx_MODULE_NAME "KSUMS2.KSUMS.KSUMS_"
+extern int __pyx_module_is_main_KSUMS2__KSUMS__KSUMS_;
+int __pyx_module_is_main_KSUMS2__KSUMS__KSUMS_ = 0;
 
-/* Implementation of 'KSUMS_pack.KSUMS.KSUMS_' */
+/* Implementation of 'KSUMS2.KSUMS.KSUMS_' */
 static PyObject *__pyx_builtin_TypeError;
 static PyObject *__pyx_builtin_RuntimeError;
 static PyObject *__pyx_builtin_ValueError;
@@ -1875,14 +1875,14 @@ static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_test;
 static PyObject *__pyx_kp_u_unknown_dtype_code_in_numpy_pxd;
-static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyArrayObject *__pyx_v_NN, PyArrayObject *__pyx_v_NND, PyObject *__pyx_v_c_true); /* proto */
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyObject *__pyx_v_sam_i); /* proto */
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static int __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyArrayObject *__pyx_v_NN, PyArrayObject *__pyx_v_NND, PyObject *__pyx_v_c_true); /* proto */
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyObject *__pyx_v_sam_i); /* proto */
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 static PyObject *__pyx_tuple__3;
@@ -1892,7 +1892,7 @@ static PyObject *__pyx_tuple__6;
 static PyObject *__pyx_tuple__7;
 /* Late includes */
 
-/* "KSUMS_pack/KSUMS/KSUMS_.pyx":12
+/* "KSUMS2/KSUMS/KSUMS_.pyx":12
  *     cdef KSUMS c_KSUMS
  * 
  *     def __cinit__(self, np.ndarray[int, ndim=2] NN, np.ndarray[double, ndim=2] NND, c_true):             # <<<<<<<<<<<<<<
@@ -1901,8 +1901,8 @@ static PyObject *__pyx_tuple__7;
  */
 
 /* Python wrapper */
-static int __pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyArrayObject *__pyx_v_NN = 0;
   PyArrayObject *__pyx_v_NND = 0;
   PyObject *__pyx_v_c_true = 0;
@@ -1964,13 +1964,13 @@ static int __pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(PyObject *__
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 12, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_NN), __pyx_ptype_5numpy_ndarray, 1, "NN", 0))) __PYX_ERR(1, 12, __pyx_L1_error)
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_NND), __pyx_ptype_5numpy_ndarray, 1, "NND", 0))) __PYX_ERR(1, 12, __pyx_L1_error)
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self), __pyx_v_NN, __pyx_v_NND, __pyx_v_c_true);
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS___cinit__(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self), __pyx_v_NN, __pyx_v_NND, __pyx_v_c_true);
 
   /* function exit code */
   goto __pyx_L0;
@@ -1981,7 +1981,7 @@ static int __pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(PyObject *__
   return __pyx_r;
 }
 
-static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyArrayObject *__pyx_v_NN, PyArrayObject *__pyx_v_NND, PyObject *__pyx_v_c_true) {
+static int __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyArrayObject *__pyx_v_NN, PyArrayObject *__pyx_v_NND, PyObject *__pyx_v_c_true) {
   __Pyx_LocalBuf_ND __pyx_pybuffernd_NN;
   __Pyx_Buffer __pyx_pybuffer_NN;
   __Pyx_LocalBuf_ND __pyx_pybuffernd_NND;
@@ -2015,7 +2015,7 @@ static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_
   }
   __pyx_pybuffernd_NND.diminfo[0].strides = __pyx_pybuffernd_NND.rcbuffer->pybuffer.strides[0]; __pyx_pybuffernd_NND.diminfo[0].shape = __pyx_pybuffernd_NND.rcbuffer->pybuffer.shape[0]; __pyx_pybuffernd_NND.diminfo[1].strides = __pyx_pybuffernd_NND.rcbuffer->pybuffer.strides[1]; __pyx_pybuffernd_NND.diminfo[1].shape = __pyx_pybuffernd_NND.rcbuffer->pybuffer.shape[1];
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":13
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":13
  * 
  *     def __cinit__(self, np.ndarray[int, ndim=2] NN, np.ndarray[double, ndim=2] NND, c_true):
  *         self.c_KSUMS = KSUMS(NN, NND, c_true)             # <<<<<<<<<<<<<<
@@ -2033,7 +2033,7 @@ static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_
   }
   __pyx_v_self->c_KSUMS = __pyx_t_4;
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":12
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":12
  *     cdef KSUMS c_KSUMS
  * 
  *     def __cinit__(self, np.ndarray[int, ndim=2] NN, np.ndarray[double, ndim=2] NND, c_true):             # <<<<<<<<<<<<<<
@@ -2052,7 +2052,7 @@ static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_NN.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_NND.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   goto __pyx_L2;
   __pyx_L0:;
@@ -2063,7 +2063,7 @@ static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_
   return __pyx_r;
 }
 
-/* "KSUMS_pack/KSUMS/KSUMS_.pyx":15
+/* "KSUMS2/KSUMS/KSUMS_.pyx":15
  *         self.c_KSUMS = KSUMS(NN, NND, c_true)
  * 
  *     def clu(self):             # <<<<<<<<<<<<<<
@@ -2072,24 +2072,24 @@ static int __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS___cinit__(struct __pyx_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_3clu(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_3clu(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_3clu(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_3clu(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("clu (wrapper)", 0);
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_2clu(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_2clu(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("clu", 0);
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":16
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":16
  * 
  *     def clu(self):
  *         self.c_KSUMS.opt()             # <<<<<<<<<<<<<<
@@ -2098,7 +2098,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx
  */
   __pyx_v_self->c_KSUMS.opt();
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":15
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":15
  *         self.c_KSUMS = KSUMS(NN, NND, c_true)
  * 
  *     def clu(self):             # <<<<<<<<<<<<<<
@@ -2113,7 +2113,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx
   return __pyx_r;
 }
 
-/* "KSUMS_pack/KSUMS/KSUMS_.pyx":18
+/* "KSUMS2/KSUMS/KSUMS_.pyx":18
  *         self.c_KSUMS.opt()
  * 
  *     def _construct_hi(self, sam_i):             # <<<<<<<<<<<<<<
@@ -2122,19 +2122,19 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_2clu(struct __pyx
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5_construct_hi(PyObject *__pyx_v_self, PyObject *__pyx_v_sam_i); /*proto*/
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5_construct_hi(PyObject *__pyx_v_self, PyObject *__pyx_v_sam_i) {
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5_construct_hi(PyObject *__pyx_v_self, PyObject *__pyx_v_sam_i); /*proto*/
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5_construct_hi(PyObject *__pyx_v_self, PyObject *__pyx_v_sam_i) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_construct_hi (wrapper)", 0);
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self), ((PyObject *)__pyx_v_sam_i));
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self), ((PyObject *)__pyx_v_sam_i));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyObject *__pyx_v_sam_i) {
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, PyObject *__pyx_v_sam_i) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -2143,7 +2143,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_construct_hi", 0);
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":19
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":19
  * 
  *     def _construct_hi(self, sam_i):
  *         self.c_KSUMS.construct_hi(sam_i)             # <<<<<<<<<<<<<<
@@ -2153,7 +2153,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(st
   __pyx_t_1 = __Pyx_PyInt_As_int(__pyx_v_sam_i); if (unlikely((__pyx_t_1 == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 19, __pyx_L1_error)
   __pyx_v_self->c_KSUMS.construct_hi(__pyx_t_1);
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":18
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":18
  *         self.c_KSUMS.opt()
  * 
  *     def _construct_hi(self, sam_i):             # <<<<<<<<<<<<<<
@@ -2165,7 +2165,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(st
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS._construct_hi", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS._construct_hi", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2173,7 +2173,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(st
   return __pyx_r;
 }
 
-/* "KSUMS_pack/KSUMS/KSUMS_.pyx":23
+/* "KSUMS2/KSUMS/KSUMS_.pyx":23
  * 
  *     @property
  *     def y_pre(self):             # <<<<<<<<<<<<<<
@@ -2182,19 +2182,19 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4_construct_hi(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5y_pre_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5y_pre_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2203,7 +2203,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(st
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":24
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":24
  *     @property
  *     def y_pre(self):
  *         return self.c_KSUMS.y             # <<<<<<<<<<<<<<
@@ -2217,7 +2217,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(st
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":23
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":23
  * 
  *     @property
  *     def y_pre(self):             # <<<<<<<<<<<<<<
@@ -2228,7 +2228,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS.y_pre.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS.y_pre.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2236,7 +2236,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(st
   return __pyx_r;
 }
 
-/* "KSUMS_pack/KSUMS/KSUMS_.pyx":27
+/* "KSUMS2/KSUMS/KSUMS_.pyx":27
  * 
  *     @property
  *     def time(self):             # <<<<<<<<<<<<<<
@@ -2244,19 +2244,19 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre___get__(st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4time_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4time_1__get__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2265,7 +2265,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(str
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__get__", 0);
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":28
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":28
  *     @property
  *     def time(self):
  *         return self.c_KSUMS._time             # <<<<<<<<<<<<<<
@@ -2277,7 +2277,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(str
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":27
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":27
  * 
  *     @property
  *     def time(self):             # <<<<<<<<<<<<<<
@@ -2287,7 +2287,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(str
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS.time.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS.time.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2302,19 +2302,19 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time___get__(str
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython__(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython__(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2344,7 +2344,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -2359,19 +2359,19 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_6__reduce_cython_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cython__(((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cython__(((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2401,7 +2401,7 @@ static PyObject *__pyx_pf_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_8__setstate_cytho
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("KSUMS_pack.KSUMS.KSUMS_.PyKSUMS.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("KSUMS2.KSUMS.KSUMS_.PyKSUMS.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -4529,8 +4529,8 @@ static PyObject *__pyx_convert_vector_to_py_int(const std::vector<int>  &__pyx_v
   return __pyx_r;
 }
 
-static PyObject *__pyx_tp_new_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *p;
+static PyObject *__pyx_tp_new_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -4538,17 +4538,17 @@ static PyObject *__pyx_tp_new_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS(PyTypeObject *
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)o);
+  p = ((struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)o);
   new((void*)&(p->c_KSUMS)) KSUMS();
-  if (unlikely(__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(o, a, k) < 0)) goto bad;
+  if (unlikely(__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS(PyObject *o) {
-  struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *p = (struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS *)o;
+static void __pyx_tp_dealloc_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS(PyObject *o) {
+  struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *p = (struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -4558,34 +4558,34 @@ static void __pyx_tp_dealloc_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyObject *__pyx_getprop_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_y_pre(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5y_pre_1__get__(o);
+static PyObject *__pyx_getprop_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_y_pre(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5y_pre_1__get__(o);
 }
 
-static PyObject *__pyx_getprop_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_time(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_4time_1__get__(o);
+static PyObject *__pyx_getprop_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_time(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_4time_1__get__(o);
 }
 
-static PyMethodDef __pyx_methods_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS[] = {
-  {"clu", (PyCFunction)__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_3clu, METH_NOARGS, 0},
-  {"_construct_hi", (PyCFunction)__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_5_construct_hi, METH_O, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_7__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_9__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS[] = {
+  {"clu", (PyCFunction)__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_3clu, METH_NOARGS, 0},
+  {"_construct_hi", (PyCFunction)__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_5_construct_hi, METH_O, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_7__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_9__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS[] = {
-  {(char *)"y_pre", __pyx_getprop_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_y_pre, 0, (char *)0, 0},
-  {(char *)"time", __pyx_getprop_10KSUMS_pack_5KSUMS_6KSUMS__7PyKSUMS_time, 0, (char *)0, 0},
+static struct PyGetSetDef __pyx_getsets_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS[] = {
+  {(char *)"y_pre", __pyx_getprop_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_y_pre, 0, (char *)0, 0},
+  {(char *)"time", __pyx_getprop_6KSUMS2_5KSUMS_6KSUMS__7PyKSUMS_time, 0, (char *)0, 0},
   {0, 0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS = {
+static PyTypeObject __pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS = {
   PyVarObject_HEAD_INIT(0, 0)
-  "KSUMS_pack.KSUMS.KSUMS_.PyKSUMS", /*tp_name*/
-  sizeof(struct __pyx_obj_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS), /*tp_basicsize*/
+  "KSUMS2.KSUMS.KSUMS_.PyKSUMS", /*tp_name*/
+  sizeof(struct __pyx_obj_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS, /*tp_dealloc*/
+  __pyx_tp_dealloc_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -4618,9 +4618,9 @@ static PyTypeObject __pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS, /*tp_methods*/
+  __pyx_methods_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS, /*tp_getset*/
+  __pyx_getsets_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
@@ -4628,7 +4628,7 @@ static PyTypeObject __pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS, /*tp_new*/
+  __pyx_tp_new_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -4867,16 +4867,16 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS.tp_print = 0;
+  __pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS.tp_dictoffset && __pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS.tp_dictoffset && __pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PyKSUMS, (PyObject *)&__pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
-  __pyx_ptype_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS = &__pyx_type_10KSUMS_pack_5KSUMS_6KSUMS__PyKSUMS;
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PyKSUMS, (PyObject *)&__pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS) < 0) __PYX_ERR(1, 9, __pyx_L1_error)
+  __pyx_ptype_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS = &__pyx_type_6KSUMS2_5KSUMS_6KSUMS__PyKSUMS;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -5115,14 +5115,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_KSUMS_pack__KSUMS__KSUMS_) {
+  if (__pyx_module_is_main_KSUMS2__KSUMS__KSUMS_) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(1, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "KSUMS_pack.KSUMS.KSUMS_")) {
-      if (unlikely(PyDict_SetItemString(modules, "KSUMS_pack.KSUMS.KSUMS_", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "KSUMS2.KSUMS.KSUMS_")) {
+      if (unlikely(PyDict_SetItemString(modules, "KSUMS2.KSUMS.KSUMS_", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -5143,7 +5143,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":4
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":4
  * 
  * cimport numpy as np
  * import numpy as np             # <<<<<<<<<<<<<<
@@ -5155,7 +5155,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":5
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":5
  * cimport numpy as np
  * import numpy as np
  * np.import_array()             # <<<<<<<<<<<<<<
@@ -5164,7 +5164,7 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_2 = __pyx_f_5numpy_import_array(); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(1, 5, __pyx_L1_error)
 
-  /* "KSUMS_pack/KSUMS/KSUMS_.pyx":1
+  /* "KSUMS2/KSUMS/KSUMS_.pyx":1
  * # distutils: language = c++             # <<<<<<<<<<<<<<
  * 
  * cimport numpy as np
@@ -5189,11 +5189,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init KSUMS_pack.KSUMS.KSUMS_", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init KSUMS2.KSUMS.KSUMS_", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init KSUMS_pack.KSUMS.KSUMS_");
+    PyErr_SetString(PyExc_ImportError, "init KSUMS2.KSUMS.KSUMS_");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

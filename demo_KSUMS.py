@@ -1,6 +1,6 @@
 import numpy as np
-from KSUMS_pack.KSUMS import KSUMS
-from KSUMS_pack.Public import Ifuns, Gfuns, Mfuns
+from KSUMS2.KSUMS import KSUMS
+from KSUMS2.Public import Ifuns, Gfuns, Mfuns
 
 knn = 20
 
@@ -18,5 +18,5 @@ y_pred = obj.y_pre
 acc = Mfuns.accuracy(y_true=y_true, y_pred=y_pred)
 print(acc)
 
-paper: Mpeg7, acc = 0.554
-run:   Mpeg7, acc = 0.555
+#  paper: Mpeg7, acc = 0.554
+#  run:   Mpeg7, acc = 0.555

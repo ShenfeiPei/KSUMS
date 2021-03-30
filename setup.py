@@ -15,11 +15,11 @@ def configuration(parent_package='', top_path=None):
                        assume_default_configuration=True,
                        delegate_options_to_subpackages=True,
                        quiet=True)
-    config.add_subpackage('KSUMS_pack')
+    config.add_subpackage('KSUMS2')
     return config
 
 
-setup(name="KSUMS",
+setup(name="KSUMS2",
       version="0.0.1",
       author="Shenfei Pei",
       author_email="shenfeipei@gmail.com",

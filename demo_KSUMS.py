@@ -14,7 +14,7 @@ NN, NND = Gfuns.knn_f(X, knn)
 
 obj = KSUMS(NN.astype(np.int32), NND, c_true)
 obj.clu()
-y_pred = obj.y_pre
+y_pred = np.array(obj.y_pre)
 
 
 acc = Mfuns.accuracy(y_true=y_true, y_pred=y_pred)

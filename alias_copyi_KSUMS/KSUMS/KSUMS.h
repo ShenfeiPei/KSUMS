@@ -33,12 +33,11 @@ public:
     Keep_order KO;
 
     KSUMS();
-    KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>> &NND, int c_true);
+    KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>> &NND, double max_d, int c_true);
     ~KSUMS();
 
     void opt();
 
-    int check_NND();
     void construct_hi(int sam_i);
 
 };

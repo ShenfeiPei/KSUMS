@@ -2,14 +2,16 @@
 
 KSUMS::KSUMS(){}
 
-KSUMS::KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>> &NND, int c_true){
+KSUMS::KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>> &NND, double max_d, int c_true){
     this->N = NN.size();
     this->knn = NN[0].size();
     this->c_true = c_true;
+
     this->NN = NN;
     this->NND = NND;
+    this->max_d = max_d;
 
-    //check NND
+    //check NN
     for (int i = 0; i < N; i++){
         if (NN[i][0] != i){
             std::cout << "Error opening file" << std::endl;
@@ -17,8 +19,6 @@ KSUMS::KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>>
         }
     }
 
-    // allocate memory
-    y.assign(N, 0);
 
     hi = new double[c_true];
     hi_TF = new int[c_true];
@@ -27,13 +27,10 @@ KSUMS::KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>>
 
     // initialize
     srand((unsigned)time(NULL));
+    y.assign(N, 0);
     std::generate(y.begin(), y.end(), [c_true]() {return rand() % c_true;});
 
     KO = Keep_order(y, N, c_true);
-
-    max_d = cf::maximum_2Dvec(NND);
-
-    cf::symmetry(this->NN, this->NND, 0, max_d);
 }
 
 KSUMS::~KSUMS() {}

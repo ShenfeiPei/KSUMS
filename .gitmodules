@@ -1,0 +1,3 @@
+[submodule "alias_copyi_KSUMS/FeiPub"]
+	path = alias_copyi_KSUMS/FeiPub
+	url = https://github.com/ShenfeiPei/FeiPub.git

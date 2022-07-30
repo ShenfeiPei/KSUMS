@@ -1,13 +1,13 @@
 import os
 import numpy as np
 from alias_copyi_KSUMS.KSUMS import KSUMS
-from alias_copyi_KSUMS.Public import Ifuns, Gfuns, Mfuns
+from alias_copyi_KSUMS.FeiPub import Funs, Gfuns, Mfuns
 
 knn = 20
 
 # load date
 file_path = os.path.dirname(__file__)
-X, y_true, N, dim, c_true = Ifuns.load_mat(os.path.join(file_path, "data/Mpeg7_20200916.mat"))
+X, y_true, N, dim, c_true = Funs.load_mat(os.path.join(file_path, "data/Mpeg7_20200916.mat"))
 print(N, dim, c_true)
 
 NN, NND = Gfuns.knn_f(X, knn)

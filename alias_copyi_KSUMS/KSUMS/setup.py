@@ -19,7 +19,7 @@ def configuration(parent_package='', top_path=None):
         libraries = ["m"]
 
     fpath, fname = os.path.split(os.path.abspath(__file__))
-    cpath = os.path.join(fpath, "../Public/CppFuns/")
+    cpath = os.path.join(fpath, "../FeiPub/CppFuns/")
 
     config = Configuration('KSUMS', parent_package, top_path)
 

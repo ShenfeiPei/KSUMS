@@ -29,7 +29,6 @@ public:
 
     double max_d = 0;
 
-    int num_iter = 0;
     double _time = 0;
 
     Keep_order KO;

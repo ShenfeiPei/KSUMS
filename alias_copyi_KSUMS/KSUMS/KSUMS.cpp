@@ -4,7 +4,6 @@ KSUMS::KSUMS(){}
 
 KSUMS::KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>> &NND, double max_d, int c_true){
     this->N = NN.size();
-    this->knn = NN[0].size();
     this->c_true = c_true;
 
     this->NN = NN;
@@ -19,11 +18,8 @@ KSUMS::KSUMS(std::vector<std::vector<int>> &NN, std::vector<std::vector<double>>
         }
     }
 
-
     hi = new double[c_true];
-    hi_TF = new int[c_true];
     hi_count = new int[c_true];
-    knn_c = new int[knn];
 
     // initialize
     srand((unsigned)time(NULL));
@@ -53,22 +49,19 @@ void KSUMS::opt(){
             c_old = y[sam_i];
 
             // knn_c
-            for (int k = 0; k < knn; k++){
-                tmp_nb = NN[sam_i][k];
-                knn_c[k] = y[tmp_nb];
+            knn_c.clear();
+            for (auto nb: NN[sam_i]){
+                knn_c.insert(y[nb]);
             }
 
             construct_hi(sam_i);
 
             // find minimun in knn
-            h_min_ind = knn_c[0];
+            h_min_ind = *knn_c.begin();
             h_min_val = hi[h_min_ind];
-            for (int k = 1; k < knn; k++){
-                tmp_c = knn_c[k];
-                if (hi[tmp_c] < h_min_val){
-                    h_min_ind = tmp_c;
-                    h_min_val = hi[h_min_ind];
-                }
+            for (auto tmp_c: knn_c) if (hi[tmp_c] < h_min_val){
+                h_min_ind = tmp_c;
+                h_min_val = hi[h_min_ind];
             }
 
             if (KO.o2ni[0] * max_d < h_min_val){
@@ -97,29 +90,24 @@ void KSUMS::opt(){
 
 void KSUMS::construct_hi(int sam_i){
 
-    int tmp_c, tmp_ni;
 
-    for (int k = 0; k < knn; k++){
-        tmp_c = knn_c[k];
+    for (auto tmp_c: knn_c){
         hi[tmp_c] = 0;
         hi_count[tmp_c] = 0;
-        hi_TF[tmp_c] = 0;
     }
 
-    for (int k = 0; k < knn; k++){
-        tmp_c = knn_c[k];
+    int nb, tmp_c;
+    for (int k = 0; k < NN[sam_i].size(); k++){
+        nb = NN[sam_i][k];
+        tmp_c = y[nb];
         hi[tmp_c] += NND[sam_i][k];
         hi_count[tmp_c] += 1;
     }
 
-    for (int j = 0; j < knn; j++){
-        tmp_c = knn_c[j];
-        if (hi_TF[tmp_c] == 0){
-            hi_TF[tmp_c] = 1;
-
-            tmp_ni = KO.o2ni[KO.c2o[tmp_c]];
-            hi[tmp_c] += (tmp_ni - hi_count[tmp_c]) * max_d;
-        }
+    int tmp_ni;
+    for (auto tmp_c: knn_c){
+        tmp_ni = KO.o2ni[KO.c2o[tmp_c]];
+        hi[tmp_c] += (tmp_ni - hi_count[tmp_c]) * max_d;
     }
 
 }

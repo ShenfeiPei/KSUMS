@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <vector>
 #include <ctime>
+#include <unordered_set>
 #include "CppFuns.h"
 #include "Keep_order.h"
 
@@ -21,10 +22,9 @@ public:
     std::vector<int> y;
 
     double *hi = nullptr;
-    int *hi_TF = nullptr;
     int *hi_count = nullptr;
 
-    int *knn_c = nullptr;
+    std::unordered_set<int> knn_c;
     int num_iter = 0;
 
     double max_d = 0;

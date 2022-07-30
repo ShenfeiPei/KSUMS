@@ -17,7 +17,7 @@ cdef class PyKSUMS:
 
     @property
     def y_pre(self):
-        return self.c_KSUMS.y
+        return np.array(self.c_KSUMS.y)
 
     @property
     def time(self):

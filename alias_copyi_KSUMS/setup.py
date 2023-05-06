@@ -7,6 +7,7 @@ def configuration(parent_package='', top_path=None):
     config = Configuration('alias_copyi_KSUMS', parent_package, top_path)
     config.add_subpackage('KSUMS')
     config.add_subpackage('FeiPub')
+    config.add_data_dir('data')
 
     return config
 

@@ -1,16 +1,15 @@
 import os
 import scipy.io as sio
 import numpy as np
-from alias_copyi_KSUMS.KSUMS import KSUMS
+from alias_copyi_KSUMS import KSUMS, data_path
 from alias_copyi_KSUMS.FeiPub import Funs, Gfuns, Mfuns
 
 knn = 20
 
 # load date
-file_path = os.path.dirname(__file__)
-data = sio.loadmat(os.path.join(file_path, "data/Mpeg7_20200916.mat"))
+data = sio.loadmat(os.path.join(data_path, "Face95.mat"))
 X = data["X"]
-y_true = data["Y"].astype(np.int32).reshape(-1)
+y_true = data["y_true"].astype(np.int32).reshape(-1)
 c_true = len(np.unique(y_true))
 
 NN, NND, t_graph = Gfuns.knn_f(X, knn, self_include=True)
@@ -25,5 +24,5 @@ y_pred = obj.y_pre
 acc = Mfuns.accuracy(y_true=y_true, y_pred=y_pred)
 print(acc)
 
-#  paper: Mpeg7, acc = 0.554
-#  run:   Mpeg7, acc = 0.555
+#  paper: Face95, acc = 0.471
+#  run:   Face95, acc = 0.476

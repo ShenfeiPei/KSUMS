@@ -2,7 +2,9 @@
 
 ### install
 ```
-pip install git+https://github.com/ShenfeiPei/KSUMS.git
+git clone --recursive git@github.com:ShenfeiPei/KSUMS.git 
+cd KSUMS
+python setup.py install
 ```
 
 ### usage:
